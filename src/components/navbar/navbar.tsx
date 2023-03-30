@@ -6,21 +6,7 @@ import Typography from "@mui/material/Typography";
 import Container from "@mui/material/Container";
 import Button from "@mui/material/Button";
 import Link from "next/link";
-
-const pages = [
-  {
-    title: "About Us",
-    href: "/about",
-  },
-  {
-    title: "Offer",
-    href: "/offer",
-  },
-  {
-    title: "Contact",
-    href: "/contact",
-  },
-];
+import { pages } from "../assets/items/navbarItems";
 
 export default function NavBar() {
   const router = useRouter();
