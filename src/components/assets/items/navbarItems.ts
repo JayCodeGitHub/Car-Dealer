@@ -1,4 +1,8 @@
 export const pages = [
+  {
+    title: "Home",
+    href: "/",
+  },
     {
       title: "About Us",
       href: "/about",
