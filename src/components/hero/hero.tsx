@@ -1,13 +1,20 @@
-import {
-  Box,
-  Button,
-  Container,
-  Typography,
-  Card,
-  CardMedia,
-} from "@mui/material";
+import { Box, Button, Container, Typography, CardMedia } from "@mui/material";
 
-export default function Hero() {
+interface HeroProps {
+  title: string;
+  description: string;
+  button: string;
+  secondButton: string;
+  img: string;
+}
+
+export default function Hero({
+  title,
+  description,
+  button,
+  secondButton,
+  img,
+}: HeroProps) {
   return (
     <Box>
       <Container maxWidth="xl">
@@ -30,18 +37,13 @@ export default function Hero() {
                   textAlign: "center",
                 }}
               >
-                Find Your Dream Car Today Browse Our Selection!
+                {title}
               </Typography>
               <Typography
                 variant="body1"
                 sx={{ mt: 3, padding: "1rem", fontSize: "1.1rem" }}
               >
-                At our dealership, we offer the best selection of high-quality
-                cars, trucks, and SUVs at competitive prices. With a team of
-                knowledgeable and friendly sales professionals, we make it easy
-                to find your dream car. Plus, our financing options and expert
-                service department ensure a hassle-free ownership experience.
-                Visit us today and experience the difference!
+                {description}
               </Typography>
               <Box
                 sx={{
@@ -63,7 +65,7 @@ export default function Hero() {
                     },
                   }}
                 >
-                  See Offer
+                  {button}
                 </Button>
                 <Button
                   variant="contained"
@@ -78,7 +80,7 @@ export default function Hero() {
                     },
                   }}
                 >
-                  Contact Us
+                  {secondButton}
                 </Button>
               </Box>
             </Box>
@@ -86,7 +88,7 @@ export default function Hero() {
               <CardMedia
                 component="img"
                 sx={{ width: "100%" }}
-                image="./car.png"
+                image={img}
                 alt="Alt"
               />
             </Box>

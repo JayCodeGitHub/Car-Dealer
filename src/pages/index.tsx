@@ -1,9 +1,18 @@
 import Hero from "@/components/hero/hero";
+import { mainPageItems } from "@/components/assets/items/mainPageItems";
 
 export default function Home() {
+  const { title, description, button, secondButton, img } =
+    mainPageItems[0].heroItems;
   return (
     <main>
-      <Hero />
+      <Hero
+        title={title}
+        description={description}
+        button={button}
+        secondButton={secondButton}
+        img={img}
+      />
     </main>
   );
 }
