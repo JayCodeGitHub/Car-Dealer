@@ -20,7 +20,13 @@ export default function NavBar() {
     <Container
       component="nav"
       maxWidth="xl"
-      sx={{ padding: { xs: "0 1rem", md: "0 5rem" } }}
+      sx={{
+        padding: { xs: "0 1rem", md: "0 5rem" },
+        position: "absolute",
+        left: "50%",
+        transform: "translate(-50%)",
+        zIndex: "20",
+      }}
     >
       <Toolbar
         disableGutters
@@ -50,7 +56,9 @@ export default function NavBar() {
                 sx={
                   router.pathname == href
                     ? { my: 2, color: "#f50057", display: "block" }
-                    : { my: 2, color: "black", display: "block" }
+                    : router.pathname == "/"
+                    ? { my: 2, color: "black", display: "block" }
+                    : { my: 2, color: "white", display: "block" }
                 }
               >
                 {title}
