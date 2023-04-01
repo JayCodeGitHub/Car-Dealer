@@ -14,6 +14,7 @@ export default function Home() {
   return (
     <main>
       <Hero
+        primary
         title={title}
         description={description}
         button={button}
