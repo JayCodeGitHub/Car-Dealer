@@ -6,21 +6,7 @@ import {
   ListItem,
   ListItemText,
 } from "@mui/material";
-
-const FooterItems = [
-  {
-    title: "Contact us:",
-    list: ["Email: example@example.com", "Phone: +1234567890"],
-  },
-  {
-    title: "Hours of operation:",
-    list: ["Sunday: 10am-3pm", "Saturday: 10am-6pm", "Monday-Friday: 8am-6pm"],
-  },
-  {
-    title: "Our branches",
-    list: ["Berlin: Germany", "Paris: France", "Madrid: Spain", "Rome: Italy"],
-  },
-];
+import { footerItems } from "../assets/items/footerItems";
 
 export default function Footer() {
   return (
@@ -41,7 +27,7 @@ export default function Footer() {
             flexDirection: { xs: "column", md: "row" },
           }}
         >
-          {FooterItems.map(({ title, list }) => (
+          {footerItems.map(({ title, list }) => (
             <Box
               sx={{ width: "20rem", paddingTop: { xs: "2rem", md: "0" } }}
               key={title}
