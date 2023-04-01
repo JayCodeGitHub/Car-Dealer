@@ -58,7 +58,7 @@ export const secondaryHeroStyles = {
         backgroundSize: "cover",
         backgroundPositionY: "center",
         position: "relative",
-        height: { xs: "12rem", md: "24rem" },
+        height: { xs: "15rem", md: "24rem" },
     },
     imageWrapper: {
         backgroundColor: "rgba(24, 26, 27, 0.92)",

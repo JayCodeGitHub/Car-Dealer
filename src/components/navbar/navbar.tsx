@@ -69,7 +69,11 @@ export default function NavBar() {
 
         <IconButton
           onClick={() => setIsMenuOpen(true)}
-          sx={{ color: "black", display: { xs: "flex", md: "none" } }}
+          sx={
+            router.pathname == "/"
+              ? { color: "black", display: { xs: "flex", md: "none" } }
+              : { color: "white", display: { xs: "flex", md: "none" } }
+          }
         >
           <MenuIcon />
         </IconButton>
