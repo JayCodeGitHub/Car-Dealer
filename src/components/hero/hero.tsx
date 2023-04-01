@@ -1,10 +1,13 @@
+import Link from "next/link";
 import { Box, Button, Container, Typography, CardMedia } from "@mui/material";
 
 interface HeroProps {
   title: string;
   description: string;
   button: string;
+  buttonHref: string;
   secondButton: string;
+  secondButtonHref: string;
   img: string;
 }
 
@@ -12,7 +15,9 @@ export default function Hero({
   title,
   description,
   button,
+  buttonHref,
   secondButton,
+  secondButtonHref,
   img,
 }: HeroProps) {
   return (
@@ -54,36 +59,40 @@ export default function Hero({
                   justifyContent: "space-around",
                 }}
               >
-                <Button
-                  variant="contained"
-                  sx={{
-                    mt: 3,
-                    backgroundColor: "#f50057",
-                    border: "solid transparent 2px",
-                    "&:hover": {
-                      border: "solid #f50057 2px",
-                      color: "black",
-                      backgroundColor: "transparent",
-                    },
-                  }}
-                >
-                  {button}
-                </Button>
-                <Button
-                  variant="contained"
-                  sx={{
-                    mt: 3,
-                    backgroundColor: "transparent",
-                    color: "black",
-                    border: "solid #f50057 2px",
-                    "&:hover": {
+                <Link href={buttonHref}>
+                  <Button
+                    variant="contained"
+                    sx={{
+                      mt: 3,
                       backgroundColor: "#f50057",
-                      color: "white",
-                    },
-                  }}
-                >
-                  {secondButton}
-                </Button>
+                      border: "solid transparent 2px",
+                      "&:hover": {
+                        border: "solid #f50057 2px",
+                        color: "black",
+                        backgroundColor: "transparent",
+                      },
+                    }}
+                  >
+                    {button}
+                  </Button>
+                </Link>
+                <Link href={secondButtonHref}>
+                  <Button
+                    variant="contained"
+                    sx={{
+                      mt: 3,
+                      backgroundColor: "transparent",
+                      color: "black",
+                      border: "solid #f50057 2px",
+                      "&:hover": {
+                        backgroundColor: "#f50057",
+                        color: "white",
+                      },
+                    }}
+                  >
+                    {secondButton}
+                  </Button>
+                </Link>
               </Box>
             </Box>
             <Box sx={{ width: "50%", display: { xs: "none", md: "flex" } }}>
