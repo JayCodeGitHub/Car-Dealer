@@ -7,6 +7,21 @@ import {
   ListItemText,
 } from "@mui/material";
 
+const FooterItems = [
+  {
+    title: "Contact us:",
+    list: ["Email: example@example.com", "Phone: +1234567890"],
+  },
+  {
+    title: "Hours of operation:",
+    list: ["Sunday: 10am-3pm", "Saturday: 10am-6pm", "Monday-Friday: 8am-6pm"],
+  },
+  {
+    title: "Our branches",
+    list: ["Berlin: Germany", "Paris: France", "Madrid: Spain", "Rome: Italy"],
+  },
+];
+
 export default function Footer() {
   return (
     <Box
@@ -26,48 +41,21 @@ export default function Footer() {
             flexDirection: { xs: "column", md: "row" },
           }}
         >
-          <Box sx={{ width: "20rem", paddingTop: { xs: "2rem", md: "0" } }}>
-            <Typography>Contact us:</Typography>
-            <List>
-              <ListItem>
-                <ListItemText primary="Email: example@example.com" />
-              </ListItem>
-              <ListItem>
-                <ListItemText primary="Phone: +1234567890" />
-              </ListItem>
-            </List>
-          </Box>
-          <Box sx={{ width: "20rem", paddingTop: { xs: "2rem", md: "0" } }}>
-            <Typography>Hours of operation:</Typography>
-            <List>
-              <ListItem>
-                <ListItemText primary="Sunday: 10am-3pm" />
-              </ListItem>
-              <ListItem>
-                <ListItemText primary="Saturday: 10am-6pm" />
-              </ListItem>
-              <ListItem>
-                <ListItemText primary="Monday-Friday: 8am-6pm" />
-              </ListItem>
-            </List>
-          </Box>
-          <Box sx={{ width: "20rem", paddingTop: { xs: "2rem", md: "0" } }}>
-            <Typography>Our branches</Typography>
-            <List>
-              <ListItem>
-                <ListItemText primary="Berlin: Germany" />
-              </ListItem>
-              <ListItem>
-                <ListItemText primary="Paris: France" />
-              </ListItem>
-              <ListItem>
-                <ListItemText primary="Madrid: Spain" />
-              </ListItem>
-              <ListItem>
-                <ListItemText primary="Rome: Italy" />
-              </ListItem>
-            </List>
-          </Box>
+          {FooterItems.map(({ title, list }) => (
+            <Box
+              sx={{ width: "20rem", paddingTop: { xs: "2rem", md: "0" } }}
+              key={title}
+            >
+              <Typography>{title}</Typography>
+              <List>
+                {list.map((item) => (
+                  <ListItem key={item}>
+                    <ListItemText primary={item} />
+                  </ListItem>
+                ))}
+              </List>
+            </Box>
+          ))}
         </Box>
       </Container>
     </Box>
