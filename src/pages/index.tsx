@@ -3,7 +3,7 @@ import { mainPageItems } from "@/components/assets/items/mainPageItems";
 
 export default function Home() {
   const { title, description, button, secondButton, img } =
-    mainPageItems[0].heroItems;
+    mainPageItems.heroItems;
   return (
     <main>
       <Hero

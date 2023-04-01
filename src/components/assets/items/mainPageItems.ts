@@ -1,4 +1,4 @@
-export const mainPageItems = [
+export const mainPageItems = 
     {
         heroItems: {
             title: "Find Your Dream Car Today Browse Our Selection!",
@@ -10,4 +10,3 @@ export const mainPageItems = [
             img: "./car.png"
         }
     }
-];

@@ -19,7 +19,9 @@ export default function Hero({
     <Box>
       <Container maxWidth="xl">
         <header>
-          <Box sx={{ display: "flex", paddingTop: "100px" }}>
+          <Box
+            sx={{ display: "flex", paddingTop: "5rem", paddingBottom: "5rem" }}
+          >
             <Box
               sx={{
                 width: { xs: "100%", md: "50%" },
@@ -47,7 +49,7 @@ export default function Hero({
               </Typography>
               <Box
                 sx={{
-                  width: "60%",
+                  width: { xs: "80%", md: "60%" },
                   display: "flex",
                   justifyContent: "space-around",
                 }}
