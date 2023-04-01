@@ -24,13 +24,14 @@ export default function NavBar() {
         >
           <Link href="/">
             <Typography
-              variant="h6"
+              variant="h1"
               noWrap
               sx={{
                 mr: 2,
                 display: { xs: "flex", md: "flex" },
                 fontWeight: 700,
                 letterSpacing: ".3rem",
+                fontSize: "1.5rem",
                 color: "#f50057",
                 textDecoration: "none",
               }}
