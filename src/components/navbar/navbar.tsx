@@ -1,15 +1,17 @@
-import React, { useState } from "react";
+import { useState } from "react";
 import { useRouter } from "next/router";
-import Box from "@mui/material/Box";
-import Toolbar from "@mui/material/Toolbar";
-import Typography from "@mui/material/Typography";
-import IconButton from "@mui/material/IconButton";
-import Container from "@mui/material/Container";
-import MenuIcon from "@mui/icons-material/Menu";
-import Button from "@mui/material/Button";
 import Link from "next/link";
+import {
+  Drawer,
+  Button,
+  Container,
+  Typography,
+  Toolbar,
+  Box,
+} from "@mui/material";
+import IconButton from "@mui/material/IconButton";
+import MenuIcon from "@mui/icons-material/Menu";
 import { pages } from "../assets/items/navbarItems";
-import { Drawer } from "@mui/material";
 
 export default function NavBar() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -38,7 +40,7 @@ export default function NavBar() {
               textDecoration: "none",
             }}
           >
-            LOGO
+            Car Dealer
           </Typography>
         </Link>
         <Box sx={{ display: { xs: "none", md: "flex" } }}>
