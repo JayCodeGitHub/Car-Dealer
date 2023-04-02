@@ -6,7 +6,7 @@ import {
   ListItem,
   ListItemText,
 } from "@mui/material";
-import { footerItems } from "../assets/items/footerItems";
+import { footerItems } from "../../assets/items/footerItems";
 import { footerStyles } from "./footer.styles";
 
 export default function Footer() {

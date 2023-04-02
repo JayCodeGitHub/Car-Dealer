@@ -11,7 +11,7 @@ import {
 } from "@mui/material";
 import IconButton from "@mui/material/IconButton";
 import MenuIcon from "@mui/icons-material/Menu";
-import { pages } from "../assets/items/navbarItems";
+import { pages } from "../../assets/items/navbarItems";
 
 export default function NavBar() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);

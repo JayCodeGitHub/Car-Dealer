@@ -1,5 +1,5 @@
 import Hero from "@/components/hero/hero";
-import { mainPageItems } from "@/components/assets/items/mainPageItems";
+import { mainPageItems } from "@/assets/items/mainPageItems";
 import { Container, Typography } from "@mui/material";
 
 export default function Home() {
