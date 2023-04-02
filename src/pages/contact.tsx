@@ -1,11 +1,13 @@
 import Hero from "@/components/hero/hero";
 import { Container, Typography } from "@mui/material";
+import Form from "@/components/form/form";
 
 export default function Contact() {
   return (
     <main>
       <Hero title="Contact" />
       <Container maxWidth="xl">
+        <Form />
         <Typography
           variant="body1"
           sx={{ mt: 3, padding: "1rem", fontSize: "1.1rem" }}
