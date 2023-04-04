@@ -16,13 +16,13 @@ export default function Offer() {
       <Container
         maxWidth="xl"
         sx={{
-          padding: { xs: "2rem ", md: "2rem 0" },
+          padding: { xs: "2rem ", md: "2rem" },
         }}
       >
         <Grid
           container
           spacing={{ xs: 5, md: 15 }}
-          columns={{ xs: 1, sm: 8, md: 12 }}
+          columns={{ xs: 1, md: 8, lg: 12 }}
         >
           {offersItems.map(({ title, price, type, drive, img }) => (
             <Grid item xs={2} sm={4} md={4} key={title}>
