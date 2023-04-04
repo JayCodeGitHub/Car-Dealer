@@ -12,27 +12,59 @@ export default function Offer() {
   const offers = [
     {
       title: "Ferrari 458 Italy",
+      price: "60000$",
+      type: "Manual",
+      drive: "Diesel",
+      img: "./Ferrari.jpg",
     },
     {
       title: "Hours of operation:",
+      price: "60000$",
+      type: "Manual",
+      drive: "Diesel",
+      img: "./Ferrari.jpg",
     },
     {
       title: "Our branches",
+      price: "60000$",
+      type: "Manual",
+      drive: "Diesel",
+      img: "./Ferrari.jpg",
     },
     {
       title: "Our branches",
+      price: "60000$",
+      type: "Manual",
+      drive: "Diesel",
+      img: "./Ferrari.jpg",
     },
     {
       title: "Our branches",
+      price: "60000$",
+      type: "Manual",
+      drive: "Diesel",
+      img: "./Ferrari.jpg",
     },
     {
       title: "Our branches",
+      price: "60000$",
+      type: "Manual",
+      drive: "Diesel",
+      img: "./Ferrari.jpg",
     },
     {
       title: "Our branches",
+      price: "60000$",
+      type: "Manual",
+      drive: "Diesel",
+      img: "./Ferrari.jpg",
     },
     {
       title: "Our branches",
+      price: "60000$",
+      type: "Manual",
+      drive: "Diesel",
+      img: "./Ferrari.jpg",
     },
   ];
   return (
@@ -49,7 +81,7 @@ export default function Offer() {
           spacing={{ xs: 5, md: 15 }}
           columns={{ xs: 1, sm: 8, md: 12 }}
         >
-          {offers.map(({ title }) => (
+          {offers.map(({ title, price, type, drive, img }) => (
             <Grid item xs={2} sm={4} md={4} key={title}>
               <Box
                 sx={{
@@ -73,7 +105,7 @@ export default function Offer() {
                     borderRadius: "0.5rem",
                     overflow: "hidden",
                   }}
-                  image="./Ferrari.jpg"
+                  image={img}
                   alt="Image of Car"
                 />
                 <Typography
@@ -83,13 +115,13 @@ export default function Offer() {
                   {title}
                 </Typography>
                 <Typography variant="h4" sx={{ fontSize: "1.5rem" }}>
-                  Price: 60000
+                  Price: {price}
                 </Typography>
                 <Typography variant="h5" sx={{ fontSize: "1.2rem" }}>
-                  Type: Manual
+                  Type: {type}
                 </Typography>
                 <Typography variant="h5" sx={{ fontSize: "1.2rem" }}>
-                  Drive: Diesel
+                  Drive: {drive}
                 </Typography>
                 <Button
                   variant="contained"
