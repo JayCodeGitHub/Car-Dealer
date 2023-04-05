@@ -26,10 +26,10 @@ export default function Hero({
 }: HeroProps) {
   return (
     <>
-      {primary ? (
-        <Box>
-          <Container maxWidth="xl">
-            <header>
+      <header>
+        {primary ? (
+          <Box>
+            <Container maxWidth="xl">
               <Box sx={heroStyles.wrapper}>
                 <Box component="header" sx={heroStyles.header}>
                   <Typography variant="h2" sx={heroStyles.title}>
@@ -67,19 +67,19 @@ export default function Hero({
                   />
                 </Box>
               </Box>
-            </header>
-          </Container>
-        </Box>
-      ) : (
-        <Box sx={secondaryHeroStyles.wrapper}>
-          <Box sx={secondaryHeroStyles.imageWrapper} />
-          <Box component="header" sx={secondaryHeroStyles.header}>
-            <Typography variant="h2" sx={secondaryHeroStyles.title}>
-              {title}
-            </Typography>
+            </Container>
           </Box>
-        </Box>
-      )}
+        ) : (
+          <Box sx={secondaryHeroStyles.wrapper}>
+            <Box sx={secondaryHeroStyles.imageWrapper} />
+            <Box component="header" sx={secondaryHeroStyles.header}>
+              <Typography variant="h2" sx={secondaryHeroStyles.title}>
+                {title}
+              </Typography>
+            </Box>
+          </Box>
+        )}
+      </header>
     </>
   );
 }
