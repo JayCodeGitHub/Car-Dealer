@@ -1,14 +1,16 @@
 import Hero from "@/components/hero/hero";
 import { Container, Typography } from "@mui/material";
-import PicAndDecsSection from "@/components/picAndDescSection/picAndDescSection";
+import InfoSection from "@/components/infoSection/infoSection";
+import FeatureSection from "@/components/featureSection/featureSection";
 
 export default function About() {
   return (
     <main>
       <Hero title="About" />
       <Container maxWidth="xl">
-        <PicAndDecsSection />
-        <PicAndDecsSection secondary />
+        <InfoSection />
+        <FeatureSection />
+        <InfoSection secondary />
         <Typography
           variant="body1"
           sx={{ mt: 3, padding: "1rem", fontSize: "1.1rem" }}

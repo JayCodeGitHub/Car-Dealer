@@ -1,12 +1,10 @@
 import { Container, CardMedia, Typography, Box } from "@mui/material";
 
-interface PicAndDecsSectionProps {
+interface InfoSectionProps {
   secondary?: boolean;
 }
 
-export default function PicAndDecsSection({
-  secondary,
-}: PicAndDecsSectionProps) {
+export default function InfoSection({ secondary }: InfoSectionProps) {
   return (
     <Container
       component="section"
