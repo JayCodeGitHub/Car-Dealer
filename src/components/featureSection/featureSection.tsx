@@ -26,7 +26,7 @@ export default function FeatureSection() {
           fontWeight: "700",
         }}
       >
-        Quick & easy car rental
+        Seamless Car Buying Experience
       </Typography>
       <Box
         sx={{
@@ -52,10 +52,10 @@ export default function FeatureSection() {
           <Box sx={{ color: "#f50057", fontSize: "6rem" }}>
             <BsFillCarFrontFill />
           </Box>
-          <Typography variant="h4">Select Car</Typography>
+          <Typography variant="h4">Choosing Your Car</Typography>
           <Typography variant="body1" sx={{ color: "#706f7b" }}>
-            We offers a big range of vehicles for all your driving needs. We
-            have the perfect car to meet your needs
+            Browse through our extensive collection of cars and find the perfect
+            one that suits your needs and style.
           </Typography>
         </Box>
         <Box
@@ -72,10 +72,10 @@ export default function FeatureSection() {
           <Box sx={{ color: "#f50057", fontSize: "6rem" }}>
             <BsPeopleFill />
           </Box>
-          <Typography variant="h4">Contact Operator</Typography>
+          <Typography variant="h4">Get in Touch</Typography>
           <Typography variant="body1" sx={{ color: "#706f7b" }}>
-            Our knowledgeable and friendly operators are always ready to help
-            with any questions or concerns
+            Contact us and let our team of experts help you with any queries you
+            may have regarding the car you’ve chosen.
           </Typography>
         </Box>
         <Box
@@ -92,10 +92,10 @@ export default function FeatureSection() {
           <Box sx={{ color: "#f50057", fontSize: "6rem" }}>
             <FaFileSignature />
           </Box>
-          <Typography variant="h4">Lets Drive</Typography>
+          <Typography variant="h4">Signing the Contract</Typography>
           <Typography variant="body1" sx={{ color: "#706f7b" }}>
-            Whether youre hitting the open road, weve got you covered with our
-            wide range of cars
+            Finalize your purchase by signing the agreement and enjoy the
+            experience of owning your dream car.
           </Typography>
         </Box>
       </Box>
