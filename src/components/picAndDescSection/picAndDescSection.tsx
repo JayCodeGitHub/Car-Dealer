@@ -1,6 +1,12 @@
 import { Container, CardMedia, Typography, Box } from "@mui/material";
 
-export default function PicAndDecsSection() {
+interface PicAndDecsSectionProps {
+  secondary?: boolean;
+}
+
+export default function PicAndDecsSection({
+  secondary,
+}: PicAndDecsSectionProps) {
   return (
     <Container
       component="section"
@@ -11,7 +17,9 @@ export default function PicAndDecsSection() {
         padding: { xs: "4rem 0", md: "0" },
         justifyContent: "center",
         height: { xs: "auto", md: "35rem" },
-        flexDirection: { xs: "column", md: "row" },
+        flexDirection: secondary
+          ? { xs: "column", md: "row-reverse" }
+          : { xs: "column", md: "row" },
         margin: { xs: "0", md: "2rem 0" },
       }}
     >

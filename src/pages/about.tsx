@@ -8,6 +8,7 @@ export default function About() {
       <Hero title="About" />
       <Container maxWidth="xl">
         <PicAndDecsSection />
+        <PicAndDecsSection secondary />
         <Typography
           variant="body1"
           sx={{ mt: 3, padding: "1rem", fontSize: "1.1rem" }}
