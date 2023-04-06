@@ -2,9 +2,19 @@ import { Container, CardMedia, Typography, Box } from "@mui/material";
 
 interface InfoSectionProps {
   secondary?: boolean;
+  img: string;
+  title: string;
+  description: string;
+  alt: string;
 }
 
-export default function InfoSection({ secondary }: InfoSectionProps) {
+export default function InfoSection({
+  secondary,
+  img,
+  title,
+  description,
+  alt,
+}: InfoSectionProps) {
   return (
     <Container
       component="section"
@@ -28,8 +38,8 @@ export default function InfoSection({ secondary }: InfoSectionProps) {
           borderRadius: "0.5rem",
           overflow: "hidden",
         }}
-        image="./team.jpg"
-        alt="Image of our team"
+        image={img}
+        alt={alt}
       />
       <Box
         sx={{
@@ -50,7 +60,7 @@ export default function InfoSection({ secondary }: InfoSectionProps) {
             fontWeight: "700",
           }}
         >
-          Expert Team at Your Service
+          {title}
         </Typography>
         <Typography
           variant="body1"
@@ -59,11 +69,7 @@ export default function InfoSection({ secondary }: InfoSectionProps) {
             color: "#706f7b",
           }}
         >
-          Our team is dedicated to providing personalized customer service and
-          helping you find your perfect luxury or sports car. Trust us to guide
-          you through the process and arrange financing options that work for
-          you. Contact us to schedule a test drive and start your journey
-          towards luxury driving.
+          {description}
         </Typography>
       </Box>
     </Container>
