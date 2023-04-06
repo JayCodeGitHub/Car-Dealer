@@ -7,7 +7,7 @@ import {
   CardMedia,
   Button,
 } from "@mui/material";
-import { offersItems } from "@/assets/items/offersItems";
+import { offersItems } from "@/assets/items/offerPageItems";
 
 export default function Offer() {
   return (
