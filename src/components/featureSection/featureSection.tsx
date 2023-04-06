@@ -10,17 +10,17 @@ export default function FeatureSection() {
       maxWidth="xl"
       sx={{
         display: "flex",
-        margin: "8rem 0",
+        margin: { xs: "0 0 4rem 0", lg: "8rem 0" },
         flexDirection: "column",
         justifyContent: "space-around",
         alignItems: "center",
-        gap: "4rem",
+        gap: { xs: "2rem", lg: "4rem" },
+        padding: "0",
       }}
     >
       <Typography
         variant="h3"
         sx={{
-          marginLeft: "1rem",
           fontSize: { xs: "1.8rem", lg: "2rem", xl: "2.5rem" },
           padding: { xs: "2rem 0", md: "0" },
           fontWeight: "700",
@@ -34,11 +34,13 @@ export default function FeatureSection() {
           display: "flex",
           justifyContent: "space-around",
           alignItems: "center",
+          flexDirection: { xs: "column", md: "row" },
+          gap: { xs: "5rem", md: "0" },
         }}
       >
         <Box
           sx={{
-            width: "25%",
+            width: { xs: "100%", md: "25%" },
             textAlign: "center",
             display: "flex",
             flexDirection: "column",
@@ -58,7 +60,7 @@ export default function FeatureSection() {
         </Box>
         <Box
           sx={{
-            width: "25%",
+            width: { xs: "90%", md: "25%" },
             textAlign: "center",
             display: "flex",
             flexDirection: "column",
@@ -78,7 +80,7 @@ export default function FeatureSection() {
         </Box>
         <Box
           sx={{
-            width: "25%",
+            width: { xs: "90%", md: "25%" },
             textAlign: "center",
             display: "flex",
             flexDirection: "column",
