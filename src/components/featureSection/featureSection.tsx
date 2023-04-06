@@ -4,6 +4,29 @@ import { BsPeopleFill } from "react-icons/bs";
 import { FaFileSignature } from "react-icons/fa";
 
 export default function FeatureSection() {
+  const FeatureSectionItems = {
+    title: "Seamless Car Buying Experience",
+    steps: [
+      {
+        icon: <BsFillCarFrontFill />,
+        title: "Choosing Your Car",
+        description:
+          "Browse through our extensive collection of cars and find the perfect one that suits your needs and style.",
+      },
+      {
+        icon: <BsPeopleFill />,
+        title: "Get in Touch",
+        description:
+          "Contact us and let our team of experts help you with any queries you may have regarding the car you’ve chosen.",
+      },
+      {
+        icon: <FaFileSignature />,
+        title: "Signing the Contract",
+        description:
+          " Finalize your purchase by signing the agreement and enjoy the experience of owning your dream car.",
+      },
+    ],
+  };
   return (
     <Container
       component="section"
@@ -26,7 +49,7 @@ export default function FeatureSection() {
           fontWeight: "700",
         }}
       >
-        Seamless Car Buying Experience
+        {FeatureSectionItems.title}
       </Typography>
       <Box
         sx={{
@@ -38,66 +61,26 @@ export default function FeatureSection() {
           gap: { xs: "5rem", md: "0" },
         }}
       >
-        <Box
-          sx={{
-            width: { xs: "100%", md: "25%" },
-            textAlign: "center",
-            display: "flex",
-            flexDirection: "column",
-            alignItems: "center",
-            justifyContent: "space-around",
-            gap: "1rem",
-          }}
-        >
-          <Box sx={{ color: "#f50057", fontSize: "6rem" }}>
-            <BsFillCarFrontFill />
+        {FeatureSectionItems.steps.map(({ icon, title, description }) => (
+          <Box
+            key={title}
+            sx={{
+              width: { xs: "90%", md: "25%" },
+              textAlign: "center",
+              display: "flex",
+              flexDirection: "column",
+              alignItems: "center",
+              justifyContent: "space-around",
+              gap: "1rem",
+            }}
+          >
+            <Box sx={{ color: "#f50057", fontSize: "6rem" }}>{icon}</Box>
+            <Typography variant="h4">{title}</Typography>
+            <Typography variant="body1" sx={{ color: "#706f7b" }}>
+              {description}
+            </Typography>
           </Box>
-          <Typography variant="h4">Choosing Your Car</Typography>
-          <Typography variant="body1" sx={{ color: "#706f7b" }}>
-            Browse through our extensive collection of cars and find the perfect
-            one that suits your needs and style.
-          </Typography>
-        </Box>
-        <Box
-          sx={{
-            width: { xs: "90%", md: "25%" },
-            textAlign: "center",
-            display: "flex",
-            flexDirection: "column",
-            alignItems: "center",
-            justifyContent: "space-around",
-            gap: "1rem",
-          }}
-        >
-          <Box sx={{ color: "#f50057", fontSize: "6rem" }}>
-            <BsPeopleFill />
-          </Box>
-          <Typography variant="h4">Get in Touch</Typography>
-          <Typography variant="body1" sx={{ color: "#706f7b" }}>
-            Contact us and let our team of experts help you with any queries you
-            may have regarding the car you’ve chosen.
-          </Typography>
-        </Box>
-        <Box
-          sx={{
-            width: { xs: "90%", md: "25%" },
-            textAlign: "center",
-            display: "flex",
-            flexDirection: "column",
-            alignItems: "center",
-            justifyContent: "space-around",
-            gap: "1rem",
-          }}
-        >
-          <Box sx={{ color: "#f50057", fontSize: "6rem" }}>
-            <FaFileSignature />
-          </Box>
-          <Typography variant="h4">Signing the Contract</Typography>
-          <Typography variant="body1" sx={{ color: "#706f7b" }}>
-            Finalize your purchase by signing the agreement and enjoy the
-            experience of owning your dream car.
-          </Typography>
-        </Box>
+        ))}
       </Box>
     </Container>
   );
