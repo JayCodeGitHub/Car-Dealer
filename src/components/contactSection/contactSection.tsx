@@ -4,6 +4,7 @@ export default function ContactSection() {
   return (
     <>
       <Box
+        component="section"
         sx={{
           width: { xs: "100%", md: "50%" },
           height: "35rem",
@@ -25,10 +26,28 @@ export default function ContactSection() {
         </Typography>
         <List>
           <ListItem>
-            <ListItemText primary="Email: example@example.com" />
+            <a href="mailto:example@example.com">
+              <ListItemText
+                primary="Email: example@example.com"
+                sx={{
+                  "&:hover": {
+                    color: "#f50057",
+                  },
+                }}
+              />
+            </a>
           </ListItem>
           <ListItem>
-            <ListItemText primary="Phone: +1234567890" />
+            <a href="tel:+1234567890">
+              <ListItemText
+                primary="Phone: +1234567890"
+                sx={{
+                  "&:hover": {
+                    color: "#f50057",
+                  },
+                }}
+              />
+            </a>
           </ListItem>
         </List>
       </Box>

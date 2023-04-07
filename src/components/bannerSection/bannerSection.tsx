@@ -3,7 +3,7 @@ import { Box, Typography } from "@mui/material";
 export default function BannerSection() {
   return (
     <Box
-      component="footer"
+      component="section"
       sx={{
         backgroundImage: "url(./bannerCar.jpeg)",
         backgroundSize: "cover",
