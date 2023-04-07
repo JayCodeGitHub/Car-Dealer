@@ -29,7 +29,7 @@ export default function Offer() {
               <Box
                 sx={{
                   width: "100%",
-                  height: "30rem",
+                  height: "35rem",
                   borderRadius: "0.5rem",
                   display: "flex",
                   flexDirection: "column",
