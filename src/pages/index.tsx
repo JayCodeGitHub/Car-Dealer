@@ -2,6 +2,7 @@ import Hero from "@/components/hero/hero";
 import { heroItems, infoSectionItems } from "@/assets/items/mainPageItems";
 import FeatureSection from "@/components/featureSection/featureSection";
 import InfoSection from "@/components/infoSection/infoSection";
+import OffersSection from "@/components/offersSection/offersSection";
 
 export default function Home() {
   return (
@@ -17,6 +18,7 @@ export default function Home() {
         img={heroItems.img}
       />
       <FeatureSection />
+      <OffersSection />
       <InfoSection
         title={infoSectionItems.title}
         description={infoSectionItems.description}

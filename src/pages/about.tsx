@@ -1,5 +1,4 @@
 import Hero from "@/components/hero/hero";
-import { Container } from "@mui/material";
 import InfoSection from "@/components/infoSection/infoSection";
 import FeatureSection from "@/components/featureSection/featureSection";
 import {
