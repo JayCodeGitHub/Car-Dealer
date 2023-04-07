@@ -5,6 +5,7 @@ import {
   DealershipsSectionItems,
   TeamSectionItems,
 } from "@/assets/items/aboutPageItems";
+import BannerSection from "@/components/bannerSection/bannerSection";
 
 export default function About() {
   return (
@@ -24,6 +25,7 @@ export default function About() {
         img={TeamSectionItems.img}
         alt={TeamSectionItems.alt}
       />
+      <BannerSection />
     </main>
   );
 }

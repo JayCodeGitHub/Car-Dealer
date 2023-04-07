@@ -8,6 +8,7 @@ import {
   Button,
 } from "@mui/material";
 import { offersItems } from "@/assets/items/offerPageItems";
+import BannerSection from "@/components/bannerSection/bannerSection";
 
 export default function Offer() {
   return (
@@ -87,6 +88,7 @@ export default function Offer() {
           ))}
         </Grid>
       </Container>
+      <BannerSection />
     </main>
   );
 }

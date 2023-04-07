@@ -3,6 +3,7 @@ import { heroItems, infoSectionItems } from "@/assets/items/mainPageItems";
 import FeatureSection from "@/components/featureSection/featureSection";
 import InfoSection from "@/components/infoSection/infoSection";
 import OffersSection from "@/components/offersSection/offersSection";
+import BannerSection from "@/components/bannerSection/bannerSection";
 
 export default function Home() {
   return (
@@ -18,6 +19,7 @@ export default function Home() {
         img={heroItems.img}
       />
       <FeatureSection />
+      <BannerSection />
       <OffersSection />
       <InfoSection
         title={infoSectionItems.title}
