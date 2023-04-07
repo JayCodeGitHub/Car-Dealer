@@ -11,22 +11,20 @@ export default function About() {
   return (
     <main>
       <Hero title="About" />
-      <Container maxWidth="xl">
-        <InfoSection
-          secondary
-          title={DealershipsSectionItems.title}
-          description={DealershipsSectionItems.description}
-          img={DealershipsSectionItems.img}
-          alt={DealershipsSectionItems.alt}
-        />
-        <FeatureSection />
-        <InfoSection
-          title={TeamSectionItems.title}
-          description={TeamSectionItems.description}
-          img={TeamSectionItems.img}
-          alt={TeamSectionItems.alt}
-        />
-      </Container>
+      <InfoSection
+        secondary
+        title={DealershipsSectionItems.title}
+        description={DealershipsSectionItems.description}
+        img={DealershipsSectionItems.img}
+        alt={DealershipsSectionItems.alt}
+      />
+      <FeatureSection />
+      <InfoSection
+        title={TeamSectionItems.title}
+        description={TeamSectionItems.description}
+        img={TeamSectionItems.img}
+        alt={TeamSectionItems.alt}
+      />
     </main>
   );
 }
