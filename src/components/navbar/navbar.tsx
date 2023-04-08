@@ -12,53 +12,29 @@ import {
 import IconButton from "@mui/material/IconButton";
 import MenuIcon from "@mui/icons-material/Menu";
 import { pages } from "../../assets/items/navbarItems";
+import { navbarStyles } from "./navbar.styles";
 
 export default function NavBar() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const router = useRouter();
   return (
-    <Container
-      component="nav"
-      maxWidth="xl"
-      sx={{
-        padding: { xs: "0 1rem", md: "0 5rem" },
-        position: "absolute",
-        left: "50%",
-        transform: "translate(-50%)",
-        zIndex: "20",
-      }}
-    >
-      <Toolbar
-        disableGutters
-        style={{ display: "flex", justifyContent: "space-between" }}
-      >
+    <Container component="nav" maxWidth="xl" sx={navbarStyles.outerWrapper}>
+      <Toolbar disableGutters style={navbarStyles.toolbar}>
         <Link href="/">
-          <Typography
-            variant="h1"
-            noWrap
-            sx={{
-              mr: 2,
-              display: { xs: "flex", md: "flex" },
-              fontWeight: 700,
-              letterSpacing: ".3rem",
-              fontSize: "1.5rem",
-              color: "#f50057",
-              textDecoration: "none",
-            }}
-          >
+          <Typography variant="h1" noWrap sx={navbarStyles.logo}>
             Car Dealer
           </Typography>
         </Link>
-        <Box sx={{ display: { xs: "none", md: "flex" } }}>
+        <Box sx={navbarStyles.wrapper}>
           {pages.map(({ title, href }) => (
-            <Link href={href} key={title} style={{ padding: "0 1rem" }}>
+            <Link href={href} key={title} style={navbarStyles.navLink}>
               <Button
                 sx={
                   router.pathname == href
-                    ? { my: 2, color: "#f50057", display: "block" }
+                    ? navbarStyles.navButtonActive
                     : router.pathname == "/"
-                    ? { my: 2, color: "black", display: "block" }
-                    : { my: 2, color: "white", display: "block" }
+                    ? navbarStyles.navButton
+                    : navbarStyles.navButtonSecondary
                 }
               >
                 {title}
@@ -71,8 +47,8 @@ export default function NavBar() {
           onClick={() => setIsMenuOpen(true)}
           sx={
             router.pathname == "/"
-              ? { color: "black", display: { xs: "flex", md: "none" } }
-              : { color: "white", display: { xs: "flex", md: "none" } }
+              ? navbarStyles.hamburger
+              : navbarStyles.hamburgerSecondary
           }
         >
           <MenuIcon />
@@ -81,13 +57,7 @@ export default function NavBar() {
           open={isMenuOpen}
           onClose={() => setIsMenuOpen(false)}
           PaperProps={{
-            sx: {
-              width: "60%",
-              display: "flex",
-              justifyContent: "space-around",
-              alignItems: "center",
-              padding: "20vh 0 35vh 0",
-            },
+            sx: navbarStyles.drawer,
           }}
         >
           {pages.map(({ title, href }) => (
@@ -95,8 +65,8 @@ export default function NavBar() {
               <Button
                 sx={
                   router.pathname == href
-                    ? { my: 2, color: "#f50057", display: "block" }
-                    : { my: 2, color: "black", display: "block" }
+                    ? navbarStyles.navButtonActiveMobile
+                    : navbarStyles.navButtonMobile
                 }
               >
                 {title}
