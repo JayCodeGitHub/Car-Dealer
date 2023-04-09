@@ -14,4 +14,17 @@ export const footerStyles = {
     width: "20rem",
     paddingTop: { xs: "2rem", md: "0" },
   },
+  contactItem: {
+    "&:hover": {
+      color: "#f50057",
+    },
+  },
+  author: {
+    color: "#f50057",
+    textAlign: "center",
+    padding: "1rem 0",
+    "&:hover": {
+      color: "grey",
+    },
+  }
 };

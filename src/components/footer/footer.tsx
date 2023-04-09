@@ -21,11 +21,7 @@ export default function Footer() {
                 <a href="mailto:example@example.com">
                   <ListItemText
                     primary="Email: example@example.com"
-                    sx={{
-                      "&:hover": {
-                        color: "#f50057",
-                      },
-                    }}
+                    sx={footerStyles.contactItem}
                   />
                 </a>
               </ListItem>
@@ -33,11 +29,7 @@ export default function Footer() {
                 <a href="tel:+1234567890">
                   <ListItemText
                     primary="Phone: +1234567890"
-                    sx={{
-                      "&:hover": {
-                        color: "#f50057",
-                      },
-                    }}
+                    sx={footerStyles.contactItem}
                   />
                 </a>
               </ListItem>
@@ -57,6 +49,9 @@ export default function Footer() {
           ))}
         </Box>
       </Container>
+      <a href="https://jaycode.pl/">
+        <Typography sx={footerStyles.author}>Created by JayCode</Typography>
+      </a>
     </Box>
   );
 }
