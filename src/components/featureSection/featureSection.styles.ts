@@ -37,4 +37,4 @@ export const featureSectionStyles = {
     description: {
         color: "#706f7b" 
     }
-  };
+};

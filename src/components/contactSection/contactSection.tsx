@@ -1,19 +1,10 @@
 import { Box, Typography, List, ListItem, ListItemText } from "@mui/material";
+import { contactSectionStyles } from "./contactSection.styles";
 
 export default function ContactSection() {
   return (
     <>
-      <Box
-        component="section"
-        sx={{
-          width: { xs: "100%", md: "50%" },
-          height: "35rem",
-          padding: { xs: "2rem 2rem 4rem 2rem", md: "2rem 2rem 10rem 2rem" },
-          display: "flex",
-          flexDirection: "column",
-          justifyContent: "space-around",
-        }}
-      >
+      <Box component="section" sx={contactSectionStyles.wrapper}>
         <Typography variant="h3">Feel free to contact us!</Typography>
         <Typography variant="body1">
           At our dealership, we pride ourselves on providing top-notch customer
@@ -29,11 +20,7 @@ export default function ContactSection() {
             <a href="mailto:example@example.com">
               <ListItemText
                 primary="Email: example@example.com"
-                sx={{
-                  "&:hover": {
-                    color: "#f50057",
-                  },
-                }}
+                sx={contactSectionStyles.listItem}
               />
             </a>
           </ListItem>
@@ -41,11 +28,7 @@ export default function ContactSection() {
             <a href="tel:+1234567890">
               <ListItemText
                 primary="Phone: +1234567890"
-                sx={{
-                  "&:hover": {
-                    color: "#f50057",
-                  },
-                }}
+                sx={contactSectionStyles.listItem}
               />
             </a>
           </ListItem>
