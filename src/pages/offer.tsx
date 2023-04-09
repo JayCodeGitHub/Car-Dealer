@@ -1,12 +1,5 @@
 import Hero from "@/components/hero/hero";
-import {
-  Container,
-  Typography,
-  Grid,
-  Box,
-  CardMedia,
-  Button,
-} from "@mui/material";
+import { Container, Grid } from "@mui/material";
 import { offersItems } from "@/assets/items/offerPageItems";
 import OfferItem from "@/components/offerItem/offerItem";
 import BannerSection from "@/components/bannerSection/bannerSection";
