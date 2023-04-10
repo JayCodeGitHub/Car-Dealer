@@ -44,6 +44,7 @@ export default function NavBar() {
         </Box>
 
         <IconButton
+          aria-label="Hamburger Menu"
           onClick={() => setIsMenuOpen(true)}
           sx={
             router.pathname == "/"
