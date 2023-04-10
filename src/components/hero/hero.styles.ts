@@ -1,7 +1,7 @@
 export const heroStyles = {
     wrapper: {
         display: "flex",
-        paddingTop: "5rem",
+        paddingTop: { xs: "5rem", md: "8rem" },
         paddingBottom: "5rem",
     },
     header: {
@@ -13,7 +13,7 @@ export const heroStyles = {
     },
     title: {
         fontWeight: "bold",
-        fontSize: "2.5rem",
+        fontSize: { xs: "1.8rem", md: "2.5rem" },
         textAlign: "center",
     },
     description: {
