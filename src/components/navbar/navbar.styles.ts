@@ -12,7 +12,7 @@ export const navbarStyles = {
         fontWeight: 700,
         letterSpacing: ".3rem",
         fontSize: "1.5rem",
-        color: "#f50057",
+        color: "#FF055E",
         textDecoration: "none",
     },
     toolbar: {
@@ -27,7 +27,7 @@ export const navbarStyles = {
     },
     navButtonActive: {
         my: 2,
-        color: "#f50057",
+        color: "#FF055E",
         display: "block" 
     },
     navButton: {
@@ -57,7 +57,7 @@ export const navbarStyles = {
     },
     navButtonActiveMobile: {
         my: 2,
-        color: "#f50057",
+        color: "#FF055E",
         display: "block" 
     },
     navButtonMobile: {

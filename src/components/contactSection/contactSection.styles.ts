@@ -9,7 +9,7 @@ export const contactSectionStyles = {
     },
     listItem: {
         "&:hover": {
-            color: "#f50057",
+            color: "#FF055E",
           },
     },  
 };

@@ -28,10 +28,10 @@ export const heroStyles = {
     },
     button: {
         mt: 3,
-        backgroundColor: "#f50057",
+        backgroundColor: "#FF055E",
         border: "solid transparent 2px",
         "&:hover": {
-          border: "solid #f50057 2px",
+          border: "solid #FF055E 2px",
           color: "black",
           backgroundColor: "transparent",
         },
@@ -40,9 +40,9 @@ export const heroStyles = {
         mt: 3,
         backgroundColor: "transparent",
         color: "black",
-        border: "solid #f50057 2px",
+        border: "solid #FF055E 2px",
         "&:hover": {
-          backgroundColor: "#f50057",
+          backgroundColor: "#FF055E",
           color: "white",
         },
     },

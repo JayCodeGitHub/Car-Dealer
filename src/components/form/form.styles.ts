@@ -9,23 +9,23 @@ export const formStyles = {
     },
     formItem: {
         "& label.Mui-focused": {
-            color: "red",
+            color: "#FF055E",
         },
         "& .MuiOutlinedInput-root": {
             "&:hover fieldset": {
-                borderColor: "red",
+                borderColor: "#FF055E",
             },
             "&.Mui-focused fieldset": {
-                borderColor: "red",
+                borderColor: "#FF055E",
             },
         },
     },
     button: {
         mt: 3,
-        backgroundColor: "#f50057",
+        backgroundColor: "#FF055E",
         border: "solid transparent 2px",
         "&:hover": {
-          border: "solid #f50057 2px",
+          border: "solid #FF055E 2px",
           color: "black",
           backgroundColor: "transparent",
         },

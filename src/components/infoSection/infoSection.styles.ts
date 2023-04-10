@@ -39,16 +39,16 @@ export const infoSectionStyles = {
     },
     description: {
         fontSize: { xs: "1.2rem", lg: "1.1rem", xl: "1.4rem" },
-        color: "#706f7b",
+        color: "#4B4A54" 
     },
     button: {
         mt: 3,
-        backgroundColor: "#f50057",
+        backgroundColor: "#FF055E",
         border: "solid transparent 2px",
         color: "white",
         fontSize: "1rem",
         "&:hover": {
-          border: "solid #f50057 2px",
+          border: "solid #FF055E 2px",
           color: "black",
           backgroundColor: "transparent",
         },

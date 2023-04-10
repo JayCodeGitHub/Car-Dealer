@@ -33,10 +33,10 @@ export const offerItemStyles = {
     button: {
         mt: 3,
         alignSelf: "center",
-        backgroundColor: "#f50057",
+        backgroundColor: "#FF055E",
         border: "solid transparent 2px",
         "&:hover": {
-          border: "solid #f50057 2px",
+          border: "solid #FF055E 2px",
           color: "black",
           backgroundColor: "transparent",
         },

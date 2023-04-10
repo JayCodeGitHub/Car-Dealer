@@ -50,12 +50,12 @@ export const offersSectionStyles = {
     button: {
         mt: 3,
         width: "100%",
-        backgroundColor: "#f50057",
+        backgroundColor: "#FF055E",
         border: "solid transparent 2px",
         color: "white",
         fontSize: "1rem",
         "&:hover": {
-          border: "solid #f50057 2px",
+          border: "solid #FF055E 2px",
           color: "black",
           backgroundColor: "transparent",
         },

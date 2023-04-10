@@ -2,7 +2,7 @@ export const footerStyles = {
   outerWrapper: {
     backgroundColor: "#181A1B",
     color: "white",
-    borderTop: "solid #f50057 2px",
+    borderTop: "solid #FF055E 2px",
   },
   wrapper: {
     display: "flex",
@@ -16,11 +16,11 @@ export const footerStyles = {
   },
   contactItem: {
     "&:hover": {
-      color: "#f50057",
+      color: "#FF055E",
     },
   },
   author: {
-    color: "#f50057",
+    color: "#FF055E",
     textAlign: "center",
     padding: "1rem 0",
     "&:hover": {

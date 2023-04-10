@@ -31,10 +31,10 @@ export const featureSectionStyles = {
         gap: "1rem",
     },
     iconWrapper: {
-        color: "#f50057",
+        color: "#FF055E",
         fontSize: "6rem"
     },
     description: {
-        color: "#706f7b" 
+        color: "#4B4A54" 
     }
 };
