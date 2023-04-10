@@ -48,7 +48,7 @@ export default function OffersSection() {
       </Grid>
       <Box sx={offersSectionStyles.buttonWrapper}>
         <Link href="/offer">
-          <Button sx={offersSectionStyles.button}>See More</Button>
+          <Button sx={offersSectionStyles.button}>See Offer</Button>
         </Link>
       </Box>
     </Container>
