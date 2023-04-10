@@ -34,7 +34,7 @@ export default function InfoSection({
       >
         <CardMedia
           component="img"
-          sx={infoSectionStyles.imgWrapper}
+          sx={infoSectionStyles.img}
           image={img}
           alt={alt}
         />

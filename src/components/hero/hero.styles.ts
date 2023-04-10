@@ -46,9 +46,11 @@ export const heroStyles = {
           color: "white",
         },
     },
-    imageWrapper: {
-        width: "50%",
-        display: { xs: "none", md: "flex" } 
+    img: {
+        width: "38.5vw",
+        height: "25vw",
+        objectFit: "contain",
+        display: { xs: "none", md: "flex" }
     }
   };
 

@@ -58,14 +58,12 @@ export default function Hero({
                     ) : null}
                   </Box>
                 </Box>
-                <Box sx={heroStyles.imageWrapper}>
-                  <CardMedia
-                    component="img"
-                    sx={{ width: "100%" }}
-                    image={img}
-                    alt="Alt"
-                  />
-                </Box>
+                <CardMedia
+                  component="img"
+                  sx={heroStyles.img}
+                  image={img}
+                  alt="Alt"
+                />
               </Box>
             </Container>
           </Box>

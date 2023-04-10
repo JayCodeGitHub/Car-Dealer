@@ -17,10 +17,11 @@ export const infoSectionStyles = {
         flexDirection: { xs: "column", md: "row-reverse" },
         margin: { xs: "0", md: "2rem 0" },
     },
-    imgWrapper: {
-        width: { xs: "100%", md: "50%" },
+    img: {
+        width: { xs: "90vw", md: "37.5vw" },
+        height: { xs: "60vw", md: "25vw" },
         borderRadius: "0.5rem",
-        overflow: "hidden",
+        objectFit: "contain",
     },
     textWrapper: {
         width: { xs: "100%", md: "50%" },
