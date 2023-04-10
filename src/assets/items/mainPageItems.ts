@@ -5,7 +5,7 @@ export const heroItems = {
     buttonHref: "/offer",
     secondButton: "Contact Us",
     secondButtonHref: "/contact",
-    img: "./car.png"
+    img: "./car.webp"
 }
 export const infoSectionItems = {
     title: "Exceptional Service and Expertise",

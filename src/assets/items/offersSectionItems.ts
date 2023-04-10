@@ -4,14 +4,14 @@ export const offersSectionItems = [
       price: "$417,650",
       type: "Automatic",
       drive: "Gasoline",
-      img: "./offers/aventador.jpeg",
+      img: "./offers/aventador.webp",
     },
     {
       title: "Ferrari 488 GTB",
       price: "$334,000",
       type: "Automatic",
       drive: "Gasoline",
-      img: "./offers/ferrari.jpg",
+      img: "./offers/ferrari.webp",
     },
     {
       title: "Bugatti Chiron",
