@@ -11,7 +11,7 @@ export const infoSectionItems = {
     title: "Exceptional Service and Expertise",
     description:
       "Our team of experts is dedicated to providing you with the best sports car shopping experience. We take pride in offering exceptional customer service and professional guidance at every stage of the car buying process. With our extensive network of sales locations across Europe, we offer a wide range of high-performance vehicles to suit your preferences.",
-    img: "./dealership.jpg",
+    img: "./dealership.webp",
     alt: "Modern and elegant car dealership with large windows showcasing a range of high-performance vehicles.",
     button: "About Us",
     buttonHref: "/about",
