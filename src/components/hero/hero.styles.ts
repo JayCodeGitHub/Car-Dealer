@@ -56,7 +56,7 @@ export const heroStyles = {
 
 export const secondaryHeroStyles = {
     wrapper: {
-        backgroundImage: "url(./Ferrari.jpg)",
+        backgroundImage: "url(./Ferrari.webp)",
         backgroundSize: "cover",
         backgroundPositionY: "center",
         position: "relative",

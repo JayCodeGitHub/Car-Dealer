@@ -1,6 +1,6 @@
 export const bannerSectionStyles = {
     wrapper: {
-        backgroundImage: "url(./bannerCar.jpeg)",
+        backgroundImage: "url(./bannerCar.webp)",
         backgroundSize: "cover",
         backgroundPositionY: "center",
         position: "relative",
